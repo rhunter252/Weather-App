@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEdDAK+q0yB9N5l4fjiaPr442j9+ONo/fjjaP3442j9+ONo/fjjaP344mf69N5m4cGuToElIA4CAAAAAAAAAAC+pUmB/eFm//3hZv/94Wb//eFm//3hZv/94Wb//eFm//3hZv/94Wb//eFm//3hZv/94Wb/w6pLgQAAAAAAAAAA8c5b4fzXYP/812D//Ndg//zXYP/812D//Ndg//zXYP/812D//Ndg//zXYP/812D//Ndg//LOXOEAAAAAAAAAAPTHV/r6zFn/+sxZ//rMWv/71nj/+9h9//vYff/72H7/+9h+//vYff/7z2L/+sxZ//rMWf/0x1f6AAAAAAAAAADzvFD9+cBS//nAUv/85rr///37///9+////fv///37///9+////fv//vnu//rMcv/5wFL/87xQ/QAAAAAAAAAA8q9J/fezS//3s0r//fLh//r79f/9+vP///ry///68v//+vL///ry///68v/84bb/97NK//KvSf0AAAAAAAAAAPCjQf32pkP/ubpz/2/z9P/Y/v//4/7+//X58f/+9uv//vbr//726//+9uv/+9ao//amQ//wo0H9AAAAAAAAAADvljr985k8/yXf5/8K6P7/evP+/9r8///d/P3//fPl//7z5P/+8+T//OLF//WkT//0mjv/75Y6/QAAAAAAAAAA7Yoz/eaRPf8K2/3/Ctv+/yjg/v/J+P7/1Pr///nw4v/96NX/9J1Q//KNNP/yjTT/8o00/+2KM/0AAAAAAAAAAOt+LP3xgS3/N8DT/wrP/v8Kz/7/J9X+/47b5f/3uIj/8o9F//GBLf/xgS3/8YEt//GBLf/rfiz9AAAAAAAAAADqcyb673Yn/86BRf8+s8v/DMT6/zi10f/GhE3/73Yn/+92J//vdif/73Yn/+92J//vdif/6nMm+gAAAAAAAAAA5Gkh4e1sIv/tbCL/7Wwi/+1sIv/tbCL/7Wwi/+1sIv/tbCL/7Wwi/+1sIv/tbCL/7Wwi/+VpIOEAAAAAAAAAALVPF4HsZB3/7GQd/+xkHf/sZB3/7GQd/+xkHf/sZB3/7GQd/+xkHf/sZB3/7GQd/+xkHf+6UReBAAAAAAAAAAAjDwQCt0sUgeNaGeHmWxn65lsZ/eZbGf3mXBn95lsZ/eZbGf3mWxr95lsZ+uNbGeG5TBWBJhAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADAAwAA//8AAA=="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/37ff0bb24c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search City" />
+        <button>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city">Weather in Denver</h2>
+        <div class="temp">51&deg;</div>
+        <img src="http://openweathermap.org/img/wn/04n" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2km/h</div>
+      </div>
+    </div>
+
+    <footer>
+      © 2022 Copyright:
+      <a class="text-white" href="https://www.randyhunter1.com/"
+        >Randy Hunter</a
+      >
+      <a href="https://github.com/rhunter252"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/rhunter252/"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
